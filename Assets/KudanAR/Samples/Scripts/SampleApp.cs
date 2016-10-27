@@ -18,6 +18,7 @@ namespace Kudan.AR.Samples
         void Start() {
             //MarkerlessClicked();
             Invoke("StartClicked", 1f);
+			_kudanTracker._displayDebugGUI = false;
         }
 
         public void MarkerClicked()
@@ -32,7 +33,7 @@ namespace Kudan.AR.Samples
 
         public void StartClicked()
         {
-            print("qwer");
+            print("asdf");
             // from the floor placer.
             Vector3 floorPosition;			// The current position in 3D space of the floor
             Quaternion floorOrientation;	// The current orientation of the floor in 3D space, relative to the device

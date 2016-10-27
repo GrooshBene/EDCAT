@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C930407E-7976-904E-45CD-49BC995FA5A1}</ProjectGuid>
+    <ProjectGuid>{2E528626-4C48-09FA-204D-13C2CD0EEA85}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -265,25 +265,25 @@
      <None Include="Assets\KudanAR\Materials\ShadowCatcher.shader" />
      <None Include="Assets\KudanAR\Materials\DebugFlat.shader" />
      <None Include="Assets\KudanAR\Resources\YpCbCr.shader" />
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
  <Reference Include="Facebook.Unity">
- <HintPath>/Users/GrooshBene/projects/EDCAT_03 (2)/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+ <HintPath>/Users/GrooshBene/projects/EDCAT/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.IOS">
- <HintPath>/Users/GrooshBene/projects/EDCAT_03 (2)/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
+ <HintPath>/Users/GrooshBene/projects/EDCAT/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>/Users/GrooshBene/projects/EDCAT_03 (2)/Assets/Plugins/LitJson.dll</HintPath>
+ <HintPath>/Users/GrooshBene/projects/EDCAT/Assets/Plugins/LitJson.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{0FE8F36E-2983-567B-99BD-E0F8ADDE588E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{67DCDBD4-2BC4-8D45-B6FE-85A0E4E83D91}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

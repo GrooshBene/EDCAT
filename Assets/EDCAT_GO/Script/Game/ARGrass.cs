@@ -7,7 +7,7 @@ public class ARGrass : MonoBehaviour
 
     public static ARGrass argrass;
 
-    public bool[] ck = new bool[2] { false, false };
+    public int[] ck = new int[2] { 0, 0};
     public bool success;
     Slider s;
     public Image grass;
@@ -41,19 +41,20 @@ public class ARGrass : MonoBehaviour
 
     void CkShake()
     {
-        if (ck[0] == false && s.value < 0.4f)
+        if (s.value < 0.4f)
         {
-            ck[0] = true;
+			ck [0] = Random.Range (0, 3);
+			print (ck [0]);
         }
-        else if (ck[1] == false && s.value > 0.6f)
+        else if (s.value > 0.6f)
         {
-            ck[1] = true;
+			ck [1] = Random.Range (0, 3);
+			print (ck [1]);
         }
-        else if (ck[0] && ck[1] && success == false)
+		else if (ck[0]==1 && ck[1]==1 && success == true)
         {
-            GameManager.instance.AR = null;
             success = true;
-            ARCat.arcat.StartCoroutine("Catching");
+			UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
         }
     }
 }

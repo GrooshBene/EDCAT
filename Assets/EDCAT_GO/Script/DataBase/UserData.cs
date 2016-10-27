@@ -72,8 +72,12 @@ public class UserData : MonoBehaviour
         }
 
         //페이스북 프로필 사진을 로드합니다.
-        if (FBLogin.instance.Profile_Pic != null)
-            profile_pic.GetComponent<Image>().sprite = FBLogin.instance.Profile_Pic;
+		if (FBLogin.instance.Profile_Pic != null){
+			profile_pic.GetComponent<Image> ().sprite = FBLogin.instance.Profile_Pic;
+		}
+		else if(FBLogin.instance.Profile_Pic == null){
+
+		}
 
     }
 

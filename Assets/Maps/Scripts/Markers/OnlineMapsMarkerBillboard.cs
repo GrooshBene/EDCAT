@@ -30,7 +30,7 @@ public class OnlineMapsMarkerBillboard : OnlineMapsMarkerInstanceBase
         OnlineMapsMarkerBillboard billboard = billboardGO.AddComponent<OnlineMapsMarkerBillboard>();
 
         billboard.marker = marker;
-        Texture2D texture = marker.texture;
+        Texture2D texture = marker.texture; 
         if (marker.texture == null) texture = OnlineMaps.instance.defaultMarkerTexture;
         if (texture != null) spriteRenderer.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0));
 
